@@ -1,1 +1,159 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* ===== Reset și bază ===== */
+* { 
+   margin: 0;
+   padding: 0; 
+   box-sizing: border-box; 
+  }
+
+:root {
+  --brown: #8c3a1e;
+  --gold: #c07d1e;
+  --dark: #231815;
+  --cream: #faf6f0;
+  --text: #2b2320;
+  --muted: #6b6560;
+}
+
+body { 
+  font-family: "Barlow", Arial, sans-serif; 
+  color: var(--text); 
+  background: #e9e4dc; 
+  line-height: 1.5; 
+  font-size: 14px; }
+
+.page { 
+  max-width: 960px; 
+  margin: 0 auto; 
+  background: #fff; 
+  position: relative; 
+}
+
+a { 
+  color: inherit; 
+  text-decoration: none; 
+}
+
+ul {
+   list-style: none; 
+  }
+
+img { 
+  display: block; 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  background: #d9d0c3; 
+}
+
+h1, h2, h3, h4, .logo, .price, .t-price, .stats strong { 
+  font-family: "Barlow Condensed", Arial, sans-serif; 
+}
+
+h2 { 
+  font-size: 32px; 
+  line-height: 1.15; 
+}
+
+small { 
+  font-size: 11px; 
+  font-weight: 600; 
+  letter-spacing: .08em; 
+  color: var(--brown); 
+}
+
+.sub { 
+  color: var(--muted); 
+}
+
+/* Butoane */
+.btn { 
+  display: inline-block; 
+  padding: 10px 22px; 
+  border-radius: 6px; 
+  font-weight: 600; 
+  font-size: 14px; 
+  border: 2px solid transparent; 
+  text-align: center; 
+}
+
+.btn-brown { 
+  background: var(--brown); 
+  color: #fff; 
+}
+
+.btn-gold { 
+  background: var(--gold); 
+  color: #fff;
+}
+
+.btn-outline { 
+  border-color: #fff; 
+  color: #fff; 
+}
+
+.btn-outline-brown { 
+  border-color: var(--brown); 
+  color: var(--brown); 
+  background: #fff; 
+}
+
+/* ===== 1. Bara de sus ===== */
+.topbar { 
+  display: flex; 
+  justify-content: space-between; 
+  background: var(--dark); 
+  color: #e8e0d6; 
+  padding: 8px 32px; 
+  font-size: 12px; }
+
+/* ===== 2. Header sticky ===== */
+.header { 
+  position: sticky; 
+  top: 0; z-index: 50; 
+  background: #fff; 
+  border-bottom: 1px solid #eee; 
+}
+
+.header-row { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 14px 32px; 
+}
+
+.search input { 
+  width: 200px; 
+  padding: 9px 12px; 
+  border: 1px solid #eee; 
+  border-radius: 6px;
+  background: var(--cream); 
+  font: inherit; 
+}
+
+.logo { 
+  font-size: 28px; 
+  font-weight: 700; 
+  color: var(--dark);
+}
+
+.logo span { 
+  color: var(--brown); 
+}
+
+.nav ul { 
+  display: flex; 
+  justify-content: center; 
+  gap: 36px; 
+  padding: 10px 0 12px; 
+}
+
+.nav a { 
+  font-weight: 500; 
+  padding-bottom: 6px; 
+}
+
+.nav a.active { 
+  color: var(--brown); 
+  border-bottom: 3px solid var(--brown); 
+}
