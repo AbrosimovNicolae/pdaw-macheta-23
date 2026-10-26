@@ -1,2 +1,4 @@
 # pdaw-macheta-23
-Evaluare periodică
+Abrosimov Nicolae
+IT11Z
+Varianta 23
